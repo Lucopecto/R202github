@@ -22,7 +22,7 @@ public class PlayerControl : MonoBehaviour
 
     bool EstAuSol()
     {
-        return Physics.Raycast(transform.position, -Vector3.up, GetComponent<Collider>().bounds.extents.y + seil);
+        return Physics.Raycast(transform.position, -Vector3.up, GetComponent<Collider>().bounds.extents.y + seuil);
     }
 
 }
