@@ -12,18 +12,22 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _dashForce;
+    [SerializeField] private float _dashCooldown;
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private TrailRenderer _tr;
 
     private bool dashRequested = false;
     private bool dashRecharge = true;
+    private float dashCool = 0f;
 
-    public float seuil = 0.1f;
+    private float seuil = 0.1f;
 
 
     
     void Update()
     {
+        dashCool += 0.1f;
+
         // Mouvement
         var vel = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * _speed;
         vel.y = _rb.velocity.y;
@@ -36,8 +40,9 @@ public class PlayerControl : MonoBehaviour
         }
 
         // Rechargement du dash
-        if (EstAuSol())
+        if (EstAuSol() && dashCool > _dashCooldown)
         {
+            dashCool = 0f;
             _tr.enabled = false;
             dashRecharge = true;
         }
