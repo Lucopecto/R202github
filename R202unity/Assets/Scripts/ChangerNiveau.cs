@@ -5,21 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class ChangerNiveau : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int _niveauActuel;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 
     private void OnTriggerEnter(Collider other){
         if(other.tag == "ChangerNiveau"){
-            SceneManager.LoadScene("Niveau1");
+            SceneManager.LoadScene($"Niveau1");
         }
     }
 
