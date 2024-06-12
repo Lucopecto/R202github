@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - ChangerNiveau
+  - FxTemporaire
+  - Obstacle
+  - Obstcales
+  - Ground
+  - PointRespawn
   layers:
   - Default
   - TransparentFX
