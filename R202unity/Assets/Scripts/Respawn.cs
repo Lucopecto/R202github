@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Respawn : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private GameObject respawnObject;
+    public float respawnAuDessus = 2f;  // Ajustez cette valeur selon vos besoins
+
     void Start()
     {
-        Respawn = GameObject.FindGameObjectWithTag("Respawn");
+        respawnObject = GameObject.FindGameObjectWithTag("Respawn");
     }
 
     // Update is called once per frame
@@ -17,18 +19,22 @@ public class Respawn : MonoBehaviour
         
     }
 
-    // void OnCollisionEnter(Collision collision)
-    // {
-    //     if (collision.gameObject.CompareTag("Obstacles"))
-    //     {
-    //         if (Respawn != null)
-    //         {
-    //             transform.position = Respawn.transform.position;
-    //         }
-    //         else
-    //         {
-    //             Debug.LogWarning("Aucun objet avec le tag 'Respawn' trouvé dans la scène.");
-    //         }
-    //     }
-    // }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            // Réapparaître le joueur à la position de l'objet de respawn
+            if (respawnObject != null)
+            {
+                Vector3 respawnPosition = respawnObject.transform.position;
+                respawnPosition.y += respawnAuDessus;  // Ajouter le décalage en hauteur
+                transform.position = respawnPosition;
+                //transform.position = respawnObject.transform.position;
+            }
+            else
+            {
+                Debug.LogWarning("Aucun objet avec le tag 'Respawn' trouvé dans la scène.");
+            }
+        }
+    }
 }
