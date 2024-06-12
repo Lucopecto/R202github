@@ -10,6 +10,8 @@ TagManager:
   - Obstcales
   - Ground
   - PointRespawn
+  - Quitter
+  - Jouer
   layers:
   - Default
   - TransparentFX
