@@ -11,7 +11,17 @@ public class ChangerNiveau : MonoBehaviour
     {
         if(other.tag == "ChangerNiveau")
         {
-            SceneManager.LoadScene($"Niveau{_niveauActuel + 1}");
+            NiveauSuivant();
         }
+    }
+
+    public void NiveauSuivant() 
+    {
+        SceneManager.LoadScene($"Niveau{_niveauActuel + 1}");
+    }
+
+    public void QuitGame()
+    {
+        SceneManager.LoadScene($"Menu");
     }
 }
