@@ -46,11 +46,15 @@ public class Pause : MonoBehaviour
     public void RetourMenu()
     {
         SceneManager.LoadScene("Menu");
+        Time.timeScale = 1f;
+        enPause = false;
     }
 
     public void Recommencer()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1f;
+        enPause = false;
     }
 
 }
