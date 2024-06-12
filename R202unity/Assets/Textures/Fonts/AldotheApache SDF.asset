@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: AldotheApache SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 1493050032
   material: {fileID: 4401868124614249097}
-  materialHashCode: 0
+  materialHashCode: -259851632
   m_Version: 1.1.0
   m_SourceFontFileGUID: 6f9db5d228431cd469995b5a9ada567e
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 6f9db5d228431cd469995b5a9ada567e, type: 3}
@@ -2367,9 +2367,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.8333333
+    - _ScaleRatioB: 0.6770833
+    - _ScaleRatioC: 0.6770833
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
