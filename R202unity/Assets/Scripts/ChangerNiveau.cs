@@ -8,8 +8,10 @@ public class ChangerNiveau : MonoBehaviour
     [SerializeField] private int _niveauActuel;
 
 
+
     private void OnTriggerEnter(Collider other){
-        if(other.tag == "ChangerNiveau"){
+        if(other.tag == "ChangerNiveau")
+        {
             SceneManager.LoadScene($"Niveau{_niveauActuel + 1}");
         }
     }

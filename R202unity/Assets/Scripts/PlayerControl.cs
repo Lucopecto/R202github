@@ -13,6 +13,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _dashForce;
     [SerializeField] private Rigidbody _rb;
+    [SerializeField] private TrailRenderer _tr;
 
     private bool dashRequested = false;
     private bool dashRecharge = true;
@@ -37,6 +38,7 @@ public class PlayerControl : MonoBehaviour
         // Rechargement du dash
         if (EstAuSol())
         {
+            _tr.enabled = false;
             dashRecharge = true;
         }
 
@@ -54,6 +56,7 @@ public class PlayerControl : MonoBehaviour
             dashRequested = false;
             if (dashRecharge)
             {
+                _tr.enabled = true;
                 Dash();
                 dashRecharge = false;
             }
