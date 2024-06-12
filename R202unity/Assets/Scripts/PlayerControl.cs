@@ -48,7 +48,7 @@ public class PlayerControl : MonoBehaviour
         }
 
         // Demande de dash
-        if (Input.GetKeyDown(KeyCode.Return) && (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)))
+        if (Input.GetKeyDown(KeyCode.RightShift) && (Input.GetKey(KeyCode.Z) || Input.GetKey(KeyCode.Q) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)))
         {
             dashRequested = true;
         }
