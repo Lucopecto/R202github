@@ -38,6 +38,7 @@ public class PlayerControl : MonoBehaviour
         // Rechargement du dash
         if (EstAuSol())
         {
+            _tr.enabled = false;
             dashRecharge = true;
         }
 
@@ -55,6 +56,7 @@ public class PlayerControl : MonoBehaviour
             dashRequested = false;
             if (dashRecharge)
             {
+                _tr.enabled = true;
                 Dash();
                 dashRecharge = false;
             }
