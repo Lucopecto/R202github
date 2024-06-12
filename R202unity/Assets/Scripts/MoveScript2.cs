@@ -4,31 +4,38 @@ using UnityEngine;
 
 public class MoveScript2 : MonoBehaviour
 {
-    public float speed = 2.0f; // Vitesse de déplacement
-    public float distance = 5.0f; // Distance totale de déplacement sur l'axe Z
+    public float speed = 2.0f; // Vitesse
+    public float distance = 5.0f; // distance déplacement axe Z
     private Vector3 startPosition;
-    private bool movingForward = true;
+    private bool movingRight = false;
 
 	void Start()
 	{
         startPosition = transform.position;
+        //InvertDirection();
 	}
 	
 	void Update()
 	{
-        float zOffset = speed * Time.deltaTime;
-        if (movingForward)
+        float xOffset = speed * Time.deltaTime;
+        if (movingRight)
         {
-            transform.position -= new Vector3(0, 0, zOffset);
+            transform.position += new Vector3(xOffset, 0, 0);
         }
         else
         {
-            transform.position += new Vector3(0, 0, zOffset);
+            transform.position -= new Vector3(xOffset, 0, 0);
         }
 
+        // Vérifier si le cube a atteint la distance maximale et inverser la direction
         if (Vector3.Distance(startPosition, transform.position) >= distance)
         {
-            movingForward = !movingForward;
-        }
+            movingRight = !movingRight;
+        }    
+    }
+
+    public void InvertDirection()
+    {
+        movingRight = !movingRight;
     }
 }
