@@ -16,8 +16,8 @@ public class MoveScript1 : MonoBehaviour {
     // public float speed = 1.0f;
     // public float distanceThreshold = 0.1f;
 
-    public float speed = 2.0f; // Vitesse de déplacement
-    public float distance = 5.0f; // Distance totale de déplacement sur l'axe Z
+    public float speed = 2.0f; 
+    public float distance = 5.0f;
     private Vector3 startPosition;
     private bool movingForward = true;
 
@@ -52,11 +52,11 @@ public class MoveScript1 : MonoBehaviour {
         float zOffset = speed * Time.deltaTime;
         if (movingForward)
         {
-            transform.position += new Vector3(0, 0, zOffset);
+            transform.position -= new Vector3(0, 0, zOffset);
         }
         else
         {
-            transform.position -= new Vector3(0, 0, zOffset);
+            transform.position += new Vector3(0, 0, zOffset);
         }
 
         // Vérifier si le cube a atteint la distance maximale et inverser la direction
@@ -64,8 +64,5 @@ public class MoveScript1 : MonoBehaviour {
         {
             movingForward = !movingForward;
         }
-
-
-
     }
 }
