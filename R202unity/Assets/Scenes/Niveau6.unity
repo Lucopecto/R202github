@@ -4396,9 +4396,9 @@ MonoBehaviour:
   _speed: 10
   _jumpForce: 300
   _dashForce: 100
+  _dashCooldown: 20
   _rb: {fileID: 416072050}
   _tr: {fileID: 416072047}
-  seuil: 0.1
 --- !u!54 &416072050
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13701,7 +13701,7 @@ PrefabInstance:
     - target: {fileID: 4421421834622669416, guid: 3fc1f305f012344469d45281f7aafc23, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bbd5e0337e9d2bb44bc37521af4c5803, type: 2}
+      objectReference: {fileID: 2100000, guid: c3f1b750c42e72f479ca767c8adcc833, type: 2}
     - target: {fileID: 4421421834624438408, guid: 3fc1f305f012344469d45281f7aafc23, type: 3}
       propertyPath: m_RootOrder
       value: 1
