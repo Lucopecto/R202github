@@ -10594,7 +10594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93958ee93386e55499cbac10088aadd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _niveauActuel: 1
+  _niveauActuel: 2
 --- !u!1001 &1413261889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11620,7 +11620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93958ee93386e55499cbac10088aadd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _niveauActuel: 1
+  _niveauActuel: 2
 --- !u!1001 &1512015371
 PrefabInstance:
   m_ObjectHideFlags: 0
