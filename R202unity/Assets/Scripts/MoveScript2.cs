@@ -27,7 +27,6 @@ public class MoveScript2 : MonoBehaviour
             transform.position -= new Vector3(xOffset, 0, 0);
         }
 
-        // Vérifier si le cube a atteint la distance maximale et inverser la direction
         if (Vector3.Distance(startPosition, transform.position) >= distance)
         {
             movingRight = !movingRight;
