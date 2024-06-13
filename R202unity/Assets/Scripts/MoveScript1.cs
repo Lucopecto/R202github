@@ -4,34 +4,18 @@ using UnityEngine;
 
 public class MoveScript1 : MonoBehaviour {
 
-    public float speed = 2.0f; 
+    public float vitesse = 2.0f; 
     public float distance = 5.0f;
-    private Vector3 startPosition;
-    private bool movingForward = true;
+    private Vector3 positionDebut;
 
 	void Start()
 	{
-        startPosition = transform.position;
+        positionDebut = transform.position;
 	}
 	
 	void Update()
 	{
-        float zOffset = Mathf.PingPong(Time.time * speed, distance);
-        transform.position = startPosition + new Vector3(0, 0, zOffset);
-        
-        // float zOffset = speed * Time.deltaTime;
-        // if (movingForward)
-        // {
-        //     transform.position -= new Vector3(0, 0, zOffset);
-        // }
-        // else
-        // {
-        //     transform.position += new Vector3(0, 0, zOffset);
-        // }
-
-        // if (Vector3.Distance(startPosition, transform.position) >= distance)
-        // {
-        //     movingForward = !movingForward;
-        // }
+        float zAxe = Mathf.PingPong(Time.time * vitesse, distance);
+        transform.position = positionDebut + new Vector3(0, 0, zAxe);
     }
 }
