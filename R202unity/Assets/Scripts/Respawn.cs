@@ -10,8 +10,8 @@ public class Respawn : MonoBehaviour
     AudioSource audio;
 
     private GameObject respawnObject;
-    public float respawnAuDessus = 2f;  // Ajustez cette valeur selon vos besoins
-    public float respawnDelay = 2f;  // Délai de 2 secondes avant de réapparaître
+    public float respawnAuDessus = 2f; 
+    public float respawnDelay = 2f;  
     private Renderer playerRenderer;
     private Collider playerCollider;
 
@@ -42,20 +42,19 @@ public class Respawn : MonoBehaviour
 
     private IEnumerator RespawnAfterDelay(float delay)
     {
-        // Désactive le rendu et les collisions du joueur
+        //désactive  rendu/collisions joueur
         playerRenderer.enabled = false;
         playerCollider.enabled = false;
 
         yield return new WaitForSeconds(delay);
 
         Vector3 respawnPosition = respawnObject.transform.position;
-        respawnPosition.y += respawnAuDessus;  // Ajouter le décalage en hauteur
+        respawnPosition.y += respawnAuDessus;
         transform.position = respawnPosition;
         audio.PlayOneShot(spawnsound, 0.7f);
 
         
 
-        // Réactive le rendu et les collisions du joueur
         playerRenderer.enabled = true;
         playerCollider.enabled = true;
     }
