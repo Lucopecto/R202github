@@ -6,14 +6,6 @@ using UnityEngine.SceneManagement;
 public class ChangerNiveau : MonoBehaviour
 {
     [SerializeField] private int _niveauActuel;
-    [SerializeField] private AudioClip nextlevelsound;
-
-    AudioSource audio;
-
-    void Start()
-    {
-        audio = GetComponent<AudioSource>();
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,7 +17,6 @@ public class ChangerNiveau : MonoBehaviour
 
     public void NiveauSuivant() 
     {
-        audio.PlayOneShot(nextlevelsound, 0.7f);
         SceneManager.LoadScene($"Niveau{_niveauActuel + 1}");
     }
 
