@@ -1316,7 +1316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddfe5b6313c4aee46b589477f9a5773b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  vitesse: 2
   distance: 4
 --- !u!4 &411980219 stripped
 Transform:
@@ -1395,7 +1395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93958ee93386e55499cbac10088aadd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _niveauActuel: 12
+  _niveauActuel: 18
+  nextlevelsound: {fileID: 0}
 --- !u!96 &416072047
 TrailRenderer:
   serializedVersion: 2
@@ -1535,6 +1536,7 @@ MonoBehaviour:
   _dashCooldown: 20
   _rb: {fileID: 416072050}
   _tr: {fileID: 416072047}
+  dashsound: {fileID: 0}
 --- !u!54 &416072050
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1628,6 +1630,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9084d5160707b4347a78c756025cc5cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathsound: {fileID: 0}
+  spawnsound: {fileID: 0}
   respawnAuDessus: 2
   respawnDelay: 2
 --- !u!1 &442371236
@@ -2619,7 +2623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddfe5b6313c4aee46b589477f9a5773b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  vitesse: 2
   distance: 2
 --- !u!65 &726803108
 BoxCollider:
@@ -2783,7 +2787,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93958ee93386e55499cbac10088aadd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _niveauActuel: 11
+  _niveauActuel: 18
+  nextlevelsound: {fileID: 0}
 --- !u!65 &779368143
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2962,6 +2967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9084d5160707b4347a78c756025cc5cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathsound: {fileID: 0}
+  spawnsound: {fileID: 0}
   respawnAuDessus: 2
   respawnDelay: 2
 --- !u!1001 &819167085
@@ -3532,7 +3539,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddfe5b6313c4aee46b589477f9a5773b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  vitesse: 2
   distance: 2
 --- !u!114 &874509004
 MonoBehaviour:
@@ -6831,7 +6838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddfe5b6313c4aee46b589477f9a5773b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  vitesse: 2
   distance: 4
 --- !u!114 &1768182678
 MonoBehaviour:

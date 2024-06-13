@@ -35,9 +35,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveau9.unity
     guid: 9395efc15fc485241a2f130aed421a32
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Niveau10.unity
+    guid: 2db53a34db5a60349a45e6d8c74d70e4
+  - enabled: 1
+    path: Assets/Scenes/Niveau11.unity
+    guid: 19b09908ab5cef44a8c4000548c26d22
+  - enabled: 1
+    path: Assets/Scenes/Niveau12.unity
+    guid: 4bdec65db9ed421468072a187a4fc6f5
+  - enabled: 1
+    path: Assets/Scenes/Niveau13.unity
+    guid: fa881ffa22fe2f34094ac71249996fe7
+  - enabled: 1
+    path: Assets/Scenes/Niveau14.unity
+    guid: fff8a66c6e4aa854cb18dbc5b44d9165
+  - enabled: 1
+    path: Assets/Scenes/Niveau15.unity
+    guid: 95926823dcf7d7b46b75271ee34bbeeb
   - enabled: 1
     path: Assets/Scenes/Niveau16.unity
     guid: c52ee824485cddb4ebcded2ac9ce8d96
@@ -53,6 +68,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveau20.unity
     guid: 3da3e1552f7ec7840bff9d6c7e02f20a
+  - enabled: 1
+    path: Assets/Scenes/Niveau21.unity
+    guid: c033d328e4975f64c84e15249da0eb8e
   - enabled: 1
     path: Assets/Scenes/Victory.unity
     guid: 1aca8edd547b66f408d6b6df8510b234
