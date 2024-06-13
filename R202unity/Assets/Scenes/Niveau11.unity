@@ -1721,6 +1721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _niveauActuel: 11
+  nextlevelsound: {fileID: 0}
 --- !u!96 &416072047
 TrailRenderer:
   serializedVersion: 2
@@ -1860,6 +1861,7 @@ MonoBehaviour:
   _dashCooldown: 20
   _rb: {fileID: 416072050}
   _tr: {fileID: 416072047}
+  dashsound: {fileID: 0}
 --- !u!54 &416072050
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1953,6 +1955,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9084d5160707b4347a78c756025cc5cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathsound: {fileID: 0}
+  spawnsound: {fileID: 0}
   respawnAuDessus: 2
   respawnDelay: 2
 --- !u!114 &416072055
@@ -3858,7 +3862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93958ee93386e55499cbac10088aadd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _niveauActuel: 10
+  _niveauActuel: 11
+  nextlevelsound: {fileID: 0}
 --- !u!65 &779368143
 BoxCollider:
   m_ObjectHideFlags: 0
