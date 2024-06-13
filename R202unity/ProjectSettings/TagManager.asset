@@ -11,6 +11,8 @@ TagManager:
   - Ground
   - PointRespawn
   - JumpPad
+  - Quitter
+  - ChangerMonde
   layers:
   - Default
   - TransparentFX

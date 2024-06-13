@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class WorldFinish : MonoBehaviour
 {
-    
+    [SerializeField] public GameObject menuFinUI;
+
+    private float opaciteCanvas = 0f;
     private bool mondeFini = false;
 
 
@@ -13,4 +15,13 @@ public class WorldFinish : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "ChangerMonde")
+        {
+            NiveauSuivant();
+        }
+    }
+
 }
