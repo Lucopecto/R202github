@@ -30,7 +30,7 @@ public class Respawn : MonoBehaviour
             if (respawnObject != null)
             {
                 
-                audio.PlayOneShot(dashsound, 0.7f);
+                audio.PlayOneShot(deathsound, 0.7f);
                 StartCoroutine(RespawnAfterDelay(respawnDelay));
             }
             else
@@ -51,6 +51,9 @@ public class Respawn : MonoBehaviour
         Vector3 respawnPosition = respawnObject.transform.position;
         respawnPosition.y += respawnAuDessus;  // Ajouter le décalage en hauteur
         transform.position = respawnPosition;
+        audio.PlayOneShot(spawnsound, 0.7f);
+
+        
 
         // Réactive le rendu et les collisions du joueur
         playerRenderer.enabled = true;
