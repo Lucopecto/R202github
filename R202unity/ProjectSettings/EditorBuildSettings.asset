@@ -36,19 +36,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Niveau9.unity
     guid: 9395efc15fc485241a2f130aed421a32
   - enabled: 1
-    path: Assets/Scenes/Niveau10.unity
+    path: Assets/Scenes/Niveau16.unity
     guid: c52ee824485cddb4ebcded2ac9ce8d96
   - enabled: 1
-    path: Assets/Scenes/Niveau11.unity
+    path: Assets/Scenes/Niveau17.unity
     guid: 6161488cf1f198946b59c9dec096a646
   - enabled: 1
-    path: Assets/Scenes/Niveau12.unity
+    path: Assets/Scenes/Niveau18.unity
     guid: 1223444ef45c6cc409e176f9098ab85b
   - enabled: 1
-    path: Assets/Scenes/Niveau13.unity
+    path: Assets/Scenes/Niveau19.unity
     guid: d6f092965d36eb44aac10e3609ed96f2
   - enabled: 1
-    path: Assets/Scenes/Niveau14.unity
+    path: Assets/Scenes/Niveau20.unity
     guid: 3da3e1552f7ec7840bff9d6c7e02f20a
   - enabled: 1
     path: Assets/Scenes/Victory.unity
