@@ -7005,9 +7005,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
-  _jumpForce: 300
-  _dashForce: 100
-  _dashCooldown: 20
+  _jumpForce: 0
+  _dashForce: 0
+  _dashCooldown: 0
   _rb: {fileID: 694126758}
   _tr: {fileID: 694126755}
   dashsound: {fileID: 8300000, guid: b69141ec6e1a02a4097dcc993f2fc498, type: 3}

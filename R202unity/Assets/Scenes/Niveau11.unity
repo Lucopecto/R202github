@@ -6376,6 +6376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathsound: {fileID: 8300000, guid: e491147facf7fc246bcc6995e72f3f69, type: 3}
   spawnsound: {fileID: 8300000, guid: 58631a4eb91995844a4620f4d9ec4bf2, type: 3}
+  deathEffect: {fileID: 74078499623404262, guid: 9790383d97594f049aecba8cf470e3b7, type: 3}
   respawnAuDessus: 2
   respawnDelay: 2
 --- !u!114 &1453664175
