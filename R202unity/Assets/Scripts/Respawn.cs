@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
+    [SerializeField] private AudioClip deathsound;
+    [SerializeField] private AudioClip spawnsound;
+
+    AudioSource audio;
+
     private GameObject respawnObject;
     public float respawnAuDessus = 2f;  // Ajustez cette valeur selon vos besoins
     public float respawnDelay = 2f;  // Délai de 2 secondes avant de réapparaître
@@ -15,6 +20,7 @@ public class Respawn : MonoBehaviour
         respawnObject = GameObject.FindGameObjectWithTag("Respawn");
         playerRenderer = GetComponent<Renderer>();
         playerCollider = GetComponent<Collider>();
+        audio = GetComponent<AudioSource>();
     }
 
     void OnCollisionEnter(Collision collision)
@@ -23,6 +29,8 @@ public class Respawn : MonoBehaviour
         {
             if (respawnObject != null)
             {
+                
+                audio.PlayOneShot(dashsound, 0.7f);
                 StartCoroutine(RespawnAfterDelay(respawnDelay));
             }
             else

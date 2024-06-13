@@ -15,6 +15,9 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float _dashCooldown;
     [SerializeField] private Rigidbody _rb;
     [SerializeField] private TrailRenderer _tr;
+    [SerializeField] private AudioClip dashsound;
+
+    AudioSource audio;
 
     private bool dashRequested = false;
     private bool dashRecharge = true;
@@ -22,6 +25,10 @@ public class PlayerControl : MonoBehaviour
 
     private float seuil = 0.1f;
 
+
+    void Start() {
+        audio = GetComponent<AudioSource>();
+    }
 
     
     void Update()
@@ -91,6 +98,7 @@ public class PlayerControl : MonoBehaviour
             dashDirection += transform.forward;
         }
 
+        audio.PlayOneShot(dashsound, 0.7f);
         _rb.AddForce(dashDirection * _dashForce, ForceMode.Impulse);
     }
 
