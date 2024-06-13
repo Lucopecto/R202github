@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class LevelSelector : MonoBehaviour
+public class SelectionNiveau : MonoBehaviour
 {
     public GameObject canvas;
     public TMP_InputField inputField;
