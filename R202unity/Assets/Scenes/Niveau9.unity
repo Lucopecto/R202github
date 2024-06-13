@@ -11886,8 +11886,8 @@ GameObject:
   - component: {fileID: 1503221891}
   - component: {fileID: 1503221897}
   - component: {fileID: 1503221898}
-  - component: {fileID: 1503221899}
   - component: {fileID: 1503221900}
+  - component: {fileID: 1503221901}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -12115,19 +12115,6 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &1503221899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503221890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93958ee93386e55499cbac10088aadd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _niveauActuel: 1
 --- !u!114 &1503221900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12142,6 +12129,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnAuDessus: 2
   respawnDelay: 2
+--- !u!114 &1503221901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503221890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eaf10f6e221d0649a8a8cc34181ac6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuFinUI: {fileID: 1408160294}
 --- !u!1001 &1509195862
 PrefabInstance:
   m_ObjectHideFlags: 0
