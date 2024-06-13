@@ -10,6 +10,7 @@ public class Respawn : MonoBehaviour
     AudioSource audio;
 
     private GameObject respawnObject;
+    public GameObject deathEffect;
     public float respawnAuDessus = 2f; 
     public float respawnDelay = 2f;  
     private Renderer playerRenderer;
@@ -29,9 +30,9 @@ public class Respawn : MonoBehaviour
         {
             if (respawnObject != null)
             {
-                
                 audio.PlayOneShot(deathsound, 0.7f);
                 StartCoroutine(RespawnAfterDelay(respawnDelay));
+                Instantiate(deathEffect, transform.position, Quaternion.identity);
             }
             else
             {
@@ -53,7 +54,6 @@ public class Respawn : MonoBehaviour
         transform.position = respawnPosition;
         audio.PlayOneShot(spawnsound, 0.7f);
 
-        
 
         playerRenderer.enabled = true;
         playerCollider.enabled = true;
