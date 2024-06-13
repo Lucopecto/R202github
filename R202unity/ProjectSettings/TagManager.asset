@@ -15,6 +15,7 @@ TagManager:
   - ChangerMonde
   - Jouer
   - Glissant
+  - FinJeu
   layers:
   - Default
   - TransparentFX

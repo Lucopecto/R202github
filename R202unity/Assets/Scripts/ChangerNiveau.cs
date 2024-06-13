@@ -13,6 +13,11 @@ public class ChangerNiveau : MonoBehaviour
         {
             NiveauSuivant();
         }
+
+        else if(other.tag == "FinJeu")
+        {
+            EndGame();
+        }
     }
 
     public void NiveauSuivant() 
@@ -23,5 +28,10 @@ public class ChangerNiveau : MonoBehaviour
     public void QuitGame()
     {
         SceneManager.LoadScene($"Menu");
+    }
+
+    void EndGame()
+    {
+        SceneManager.LoadScene("Victory");
     }
 }
